@@ -13,7 +13,35 @@ function App() {
             <Header/>
             <Main/>
             <Footer/>
-            <PopupWithForm/>
+            <PopupWithForm
+                title="Редактировать профиль"
+                name="profile"
+                buttonText="Сохранить">
+                <input id="form-name-input" type="text" className="popup__field popup__field_name" name="name"
+                       value="Имя"
+                       placeholder="Имя" required minLength="2" maxLength="40"/>
+                <span className="form-name-input-error"></span>
+                <input id="form-profession-input" type="text" className="popup__field popup__field_profession"
+                       name="about"
+                       value="Профессия"
+                       placeholder="Профессия" required minLength="2" maxLength="200"/>
+                <span className="form-profession-input-error"></span>
+            </PopupWithForm>
+            <PopupWithForm
+                title="Новое место"
+                name="photo"
+                buttonText="Сохранить">
+                <input type="text" className="popup__field " id="form-title-input" name="name" placeholder="Название"
+                       required
+                       minLength="2" maxLength="30"/>
+                    <span className="form-title-input-error"></span>
+                    <input type="url" className="popup__field popup__field_link" id="form-link-input" name="link"
+                           placeholder="Ссылка на картинку" required/>
+                        <span className="form-link-input-error"></span>
+            </PopupWithForm>
+            <PopupWithForm
+                title="Обновить аватар"
+                name="avatar"/>
             <ImagePopup/>
         </div>
         <template className="elements-template">

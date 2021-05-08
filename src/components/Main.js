@@ -12,7 +12,8 @@ function Main(props) {
                 <div className="profile__info">
                     <div className="profile__edit">
                         <h1 className="profile__name">Жак-Ив Кусто</h1>
-                        <button className="profile__button-edit" type="button" onClick={handleEditProfileClick}></button>
+                        <button className="profile__button-edit" type="button"
+                                onClick={handleEditProfileClick}></button>
                     </div>
 
                     <p className="profile__profession">Исследователь океана</p>
@@ -27,20 +28,24 @@ function Main(props) {
         </main>
     )
 }
+
 function handleEditAvatarClick(evt) {
     evt.preventDefault();
-    const popupEditAvatar = document.querySelector('.update-avatar');
+    const popupEditAvatar = document.querySelector('.popup_type_avatar');
     popupEditAvatar.classList.add('popup__opened');
 }
+
 function handleEditProfileClick(evt) {
     evt.preventDefault();
-    const popupEditInfo = document.querySelector('.profile-popup')
+    const popupEditInfo = document.querySelector('.popup_type_profile')
     popupEditInfo.classList.add('popup__opened')
 }
+
 function handleAddPlaceClick(evt) {
     evt.preventDefault();
-    const popupAddPhoto = document.querySelector('.photo-popup')
+    const popupAddPhoto = document.querySelector('.popup_type_photo')
     popupAddPhoto.classList.add('popup__opened')
 
 }
+
 export default Main;
