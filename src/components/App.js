@@ -7,57 +7,90 @@ import '../index.css';
 import Footer from "./Footer";
 
 function App() {
+    const [isEditProfilePopupOpen, setIsEditProfilePopupOpen] = React.useState(false);
+    const [isAddPlacePopupOpen, setIsAddPlacePopupOpen] = React.useState(false);
+    const [isEditAvatarPopupOpen, setIsEditAvatarPopupOpen] = React.useState(false);
+    const [selectedCard, setSelectedCard] = React.useState(false);
+
+    function handleEditAvatarClick() {
+        setIsEditAvatarPopupOpen(true)
+    }
+
+    function handleEditProfileClick() {
+        setIsEditProfilePopupOpen(true)
+    }
+
+    function handleAddPlaceClick() {
+        setIsAddPlacePopupOpen(true)
+
+    }
+
+    function closeAllPopups() {
+        setIsEditAvatarPopupOpen(false)
+        setIsEditProfilePopupOpen(false)
+        setIsAddPlacePopupOpen(false)
+        setSelectedCard(false)
+    }
+
+    function handleCardClick(card) {
+        setSelectedCard(card)
+    }
+
+
     return (
         <body className="page">
         <div className="page__container">
             <Header/>
-            <Main/>
+            <Main onEditProfile={handleEditProfileClick} onAddPlace={handleAddPlaceClick}
+                  onEditAvatar={handleEditAvatarClick} onCardClick={handleCardClick}/>
             <Footer/>
             <PopupWithForm
                 title="Редактировать профиль"
                 name="profile"
-                buttonText="Сохранить">
+                buttonText="Сохранить"
+                isOpen={isEditProfilePopupOpen}
+                onClose={closeAllPopups}>
                 <input id="form-name-input" type="text" className="popup__field popup__field_name" name="name"
-                       value="Имя"
+                    // value="Имя"
                        placeholder="Имя" required minLength="2" maxLength="40"/>
                 <span className="form-name-input-error"></span>
                 <input id="form-profession-input" type="text" className="popup__field popup__field_profession"
                        name="about"
-                       value="Профессия"
+                    // value="Профессия"
                        placeholder="Профессия" required minLength="2" maxLength="200"/>
                 <span className="form-profession-input-error"></span>
             </PopupWithForm>
             <PopupWithForm
                 title="Новое место"
                 name="photo"
-                buttonText="Сохранить">
+                buttonText="Сохранить"
+                isOpen={isAddPlacePopupOpen}
+                onClose={closeAllPopups}>
                 <input type="text" className="popup__field " id="form-title-input" name="name" placeholder="Название"
                        required
                        minLength="2" maxLength="30"/>
-                    <span className="form-title-input-error"></span>
-                    <input type="url" className="popup__field popup__field_link" id="form-link-input" name="link"
-                           placeholder="Ссылка на картинку" required/>
-                        <span className="form-link-input-error"></span>
+                <span className="form-title-input-error"></span>
+                <input type="url" className="popup__field popup__field_link" id="form-link-input" name="link"
+                       placeholder="Ссылка на картинку" required/>
+                <span className="form-link-input-error"></span>
             </PopupWithForm>
             <PopupWithForm
                 title="Обновить аватар"
-                name="avatar"/>
-            <ImagePopup/>
+                name="avatar"
+                buttonText="Сохранить"
+                isOpen={isEditAvatarPopupOpen}
+                onClose={closeAllPopups}>
+                <input type="url" className="popup__field popup__avatar-link" id="form-avatar-input" name="link"
+                       placeholder="Ссылка на аватар" required/>
+                <span className="form-avatar-input-error"></span>
+            </PopupWithForm>
+            <ImagePopup
+                card={selectedCard}
+                onClose={closeAllPopups}/>
         </div>
-        <template className="elements-template">
-            <div className="elements__item card">
-                <img src="#" alt="#" className="elements__photo"/>
-                <button className="elements__button-delete" type="button"></button>
-                <h3 className="elements__paragraph"></h3>
-                <div className="elements__button-like-container">
-                    <button className="elements__button-like" type="button"></button>
-                    <p className="elements__button-like-counter">0</p>
-                </div>
-            </div>
-        </template>
-
         </body>
     );
 }
+
 
 export default App;
