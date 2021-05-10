@@ -1,13 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5a3bfe0d-9e88-4aa7-8aff-fd461a414a02" name="Default Changelist" comment="">
+    <list default="true" id="5a3bfe0d-9e88-4aa7-8aff-fd461a414a02" name="Default Changelist" comment="Отправить на первое ревью">
       <change beforePath="$PROJECT_DIR$/../first-project" beforeDir="false" afterPath="$PROJECT_DIR$/../first-project" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ImagePopup.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ImagePopup.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/PopupWithForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PopupWithForm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/blocks/elements/__button-like/elements__button-like-counter.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/elements/__button-like/elements__button-like-counter.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../russian-travel" beforeDir="false" afterPath="$PROJECT_DIR$/../russian-travel" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -63,7 +60,7 @@
       <workItem from="1620155572826" duration="1077000" />
       <workItem from="1620157004142" duration="34000" />
       <workItem from="1620229058909" duration="22000" />
-      <workItem from="1620290922804" duration="28498000" />
+      <workItem from="1620290922804" duration="30322000" />
     </task>
     <task id="LOCAL-00001" summary="beta version">
       <created>1620463267909</created>
@@ -72,7 +69,14 @@
       <option name="project" value="LOCAL" />
       <updated>1620463267909</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Отправить на первое ревью">
+      <created>1620668066466</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1620668066466</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -80,6 +84,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="beta version" />
-    <option name="LAST_COMMIT_MESSAGE" value="beta version" />
+    <MESSAGE value="Отправить на первое ревью" />
+    <option name="LAST_COMMIT_MESSAGE" value="Отправить на первое ревью" />
   </component>
 </project>
