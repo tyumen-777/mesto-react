@@ -64,6 +64,14 @@ class Api {
         }).then(this._checkResponse)
     }
 
+    changeLikeCardStatus(cardId, isLiked) {
+        if (isLiked) {
+            return this.dislikeCard(cardId)
+        } else {
+            return this.likeCard(cardId)
+        }
+    }
+
     removeCard(cardId) {
         return fetch(`${this._address}/cards/${cardId}`, {
             method: 'DELETE',

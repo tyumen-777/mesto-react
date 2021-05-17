@@ -3,6 +3,15 @@
   <component name="ChangeListManager">
     <list default="true" id="5a3bfe0d-9e88-4aa7-8aff-fd461a414a02" name="Default Changelist" comment="Отправить на первое ревью">
       <change beforePath="$PROJECT_DIR$/../first-project" beforeDir="false" afterPath="$PROJECT_DIR$/../first-project" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mesto" beforeDir="false" afterPath="$PROJECT_DIR$/../mesto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Card.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Card.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/api.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/api.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../russian-travel" beforeDir="false" afterPath="$PROJECT_DIR$/../russian-travel" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -14,6 +23,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JavaScript File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -31,6 +41,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../for-nco-big-brothers-and-big-sisters" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -56,6 +67,8 @@
       <workItem from="1620157004142" duration="34000" />
       <workItem from="1620229058909" duration="22000" />
       <workItem from="1620290922804" duration="34489000" />
+      <workItem from="1620840993016" duration="202000" />
+      <workItem from="1621154189091" duration="14320000" />
     </task>
     <task id="LOCAL-00001" summary="beta version">
       <created>1620463267909</created>
@@ -85,7 +98,14 @@
       <option name="project" value="LOCAL" />
       <updated>1620750135000</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="fix: добавление блока catch">
+      <created>1620841183440</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1620841183440</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -95,6 +115,7 @@
     <MESSAGE value="beta version" />
     <MESSAGE value="Отправить на первое ревью" />
     <MESSAGE value="fix: Исправить ошибки после первого ревью" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix: Исправить ошибки после первого ревью" />
+    <MESSAGE value="fix: добавление блока catch" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix: добавление блока catch" />
   </component>
 </project>
