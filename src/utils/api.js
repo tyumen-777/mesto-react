@@ -78,6 +78,7 @@ class Api {
             headers: this._headers
         }).then(this._checkResponse)
     }
+
     _checkResponse(res) {
         if (!res.ok) {
             return Promise.reject(`Ошибка ${res.status}`);

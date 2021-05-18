@@ -5,12 +5,7 @@
       <change beforePath="$PROJECT_DIR$/../first-project" beforeDir="false" afterPath="$PROJECT_DIR$/../first-project" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../mesto" beforeDir="false" afterPath="$PROJECT_DIR$/../mesto" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Card.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Card.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ImagePopup.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ImagePopup.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/utils/api.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/api.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../russian-travel" beforeDir="false" afterPath="$PROJECT_DIR$/../russian-travel" afterDir="false" />
     </list>
@@ -68,7 +63,7 @@
       <workItem from="1620229058909" duration="22000" />
       <workItem from="1620290922804" duration="34489000" />
       <workItem from="1620840993016" duration="202000" />
-      <workItem from="1621154189091" duration="14320000" />
+      <workItem from="1621154189091" duration="16603000" />
     </task>
     <task id="LOCAL-00001" summary="beta version">
       <created>1620463267909</created>
@@ -105,7 +100,14 @@
       <option name="project" value="LOCAL" />
       <updated>1620841183440</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="feat: добавить функцию удаления карточки и лайка">
+      <created>1621276861429</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1621276861429</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -116,6 +118,7 @@
     <MESSAGE value="Отправить на первое ревью" />
     <MESSAGE value="fix: Исправить ошибки после первого ревью" />
     <MESSAGE value="fix: добавление блока catch" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix: добавление блока catch" />
+    <MESSAGE value="feat: добавить функцию удаления карточки и лайка" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: добавить функцию удаления карточки и лайка" />
   </component>
 </project>
