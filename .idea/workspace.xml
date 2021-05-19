@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5a3bfe0d-9e88-4aa7-8aff-fd461a414a02" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../first-project" beforeDir="false" afterPath="$PROJECT_DIR$/../first-project" afterDir="false" />
+    <list default="true" id="5a3bfe0d-9e88-4aa7-8aff-fd461a414a02" name="Default Changelist" comment="feat: добавить скрытие клавиши удалить">
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/PopupWithForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PopupWithForm.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../russian-travel" beforeDir="false" afterPath="$PROJECT_DIR$/../russian-travel" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Main.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,6 +63,7 @@
       <workItem from="1620290922804" duration="34489000" />
       <workItem from="1620840993016" duration="202000" />
       <workItem from="1621154189091" duration="30511000" />
+      <workItem from="1621408150831" duration="3291000" />
     </task>
     <task id="LOCAL-00001" summary="beta version">
       <created>1620463267909</created>
