@@ -15,8 +15,11 @@ function App() {
     const [isEditProfilePopupOpen, setIsEditProfilePopupOpen] = React.useState(false);
     const [isAddPlacePopupOpen, setIsAddPlacePopupOpen] = React.useState(false);
     const [isEditAvatarPopupOpen, setIsEditAvatarPopupOpen] = React.useState(false);
-    const [selectedCard, setSelectedCard] = React.useState('');
-    const [currentUser, setCurrentUser] = React.useState('')
+    const [isImagePopupOpen, setImagePopupOpen] = React.useState(false)
+
+    const [selectedCard, setSelectedCard] = React.useState({});
+    const [currentUser, setCurrentUser] = React.useState({});
+
     const [cards, setCards] = React.useState([]);
 
     React.useEffect(() => {
@@ -34,8 +37,10 @@ function App() {
 
         api.changeLikeCardStatus(card._id, isLiked)
             .then((newCard) => {
-                const newCards = cards.map((currentCard) => currentCard._id === card._id ? newCard : currentCard)
-                setCards(newCards)
+                //const newCards = cards.map((currentCard) => currentCard._id === card._id ? newCard : currentCard)
+                //setCards(newCards)
+                setCards((cards) => cards.map((currentCard) => currentCard._id === card._id ? newCard : currentCard))
+
             })
             .catch((err) => {
                 console.log(err)
@@ -47,6 +52,9 @@ function App() {
             .then(() => {
                 const newCards = cards.filter((elem) => elem !== card);
                 setCards(newCards);
+            })
+            .catch((err) => {
+                console.log(err)
             })
     }
 
@@ -76,11 +84,13 @@ function App() {
         setIsEditAvatarPopupOpen(false)
         setIsEditProfilePopupOpen(false)
         setIsAddPlacePopupOpen(false)
-        setSelectedCard('')
+        setImagePopupOpen(false)
+        setSelectedCard({})
     }
 
     function handleCardClick(card) {
         setSelectedCard(card)
+        setImagePopupOpen(true)
     }
 
     function handleUpdateUser({name, about}) {
@@ -141,7 +151,8 @@ function App() {
                     </PopupWithForm>
                     <ImagePopup
                         card={selectedCard}
-                        onClose={closeAllPopups}/>
+                        onClose={closeAllPopups}
+                        isOpen={isImagePopupOpen}/>
                 </div>
             </div>
         </CurrentUserContext.Provider>

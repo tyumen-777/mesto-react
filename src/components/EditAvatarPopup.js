@@ -4,21 +4,21 @@ import {CurrentUserContext} from "../contexts/CurrentUserContext";
 
 function EditAvatarPopup({isOpen, onClose, onUpdateAvatar}) {
 
-    const currentUser = React.useContext(CurrentUserContext);
-    const avatarInput = React.useRef('');
+    //const currentUser = React.useContext(CurrentUserContext);
+    const avatarInput = React.useRef();
 
     function handleSubmit(evt) {
         evt.preventDefault();
         onUpdateAvatar({
-            avatar: avatarInput.current.value ,
+            avatar: avatarInput.current.value,
         })
     }
 
-    React.useEffect(()=> {
-        avatarInput.current.value = currentUser.avatar;
-    }, [currentUser])
+    // React.useEffect(()=> {
+    //     avatarInput.current.value = currentUser.avatar;
+    // }, [''])
 
-    return(
+    return (
         <PopupWithForm
             title="Обновить аватар"
             name="avatar"
@@ -27,7 +27,7 @@ function EditAvatarPopup({isOpen, onClose, onUpdateAvatar}) {
             onClose={onClose}
             handleSubmit={handleSubmit}>
             <input type="url" className="popup__field popup__avatar-link" id="form-avatar-input" name="link"
-                   placeholder="Ссылка на аватар"  ref={avatarInput} required/>
+                   placeholder="Ссылка на аватар" ref={avatarInput} required/>
             <span className="form-avatar-input-error"> </span>
         </PopupWithForm>
     )
